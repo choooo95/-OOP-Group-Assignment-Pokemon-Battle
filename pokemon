@@ -1,0 +1,23 @@
+case class Stat ( hp: Int, def: Int )
+
+abstract class Pokemon ( val level: Int, val name: String, var currentStat: Stat )
+
+class Bulbasaur ( _level: Int, _name: String, _currentStat: Stat ) extends Pokemon ( _level, _name, _currentStat )
+
+trait PokemonCharacteristics {
+	val attack: Iterable[Attack]
+	val baseStat: Stat
+}
+
+object Bulbasaur extends PokemonCharacteristics {
+	val attack = Array(new Attack
+	val baseStat = new Stat
+}
+
+
+abstract class Attack ( val name: String, var currentPp: Int ) 
+
+abstract class ActiveAttack ( _name: String, _currentPp: Int, hpDmg: Int ) extends Attack ( _name, _currentPp )
+
+abstract class DebuffAttack ( _name: String, _currentPp: Int, defDmg: Int ) extends Attack ( _name, _currentPp )
+
