@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon May 06 18:13:19 SGT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-016a-8ca2-28d3-00000311ae50 
+on database directory D:\BSE\Sem 4\PRG 2104 - Object-Oriented Programming\pokemon\pokemon\myDB with class loader sun.misc.Launcher$AppClassLoader@5c647e05 
+Loaded from file:/D:/BSE/Sem%204/PRG%202104%20-%20Object-Oriented%20Programming/pokemon/pokemon/poke.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_191-b12
+user.dir=D:\BSE\Sem 4\PRG 2104 - Object-Oriented Programming\pokemon\pokemon
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

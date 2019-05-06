@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.controller.HomePageController">
+  <center>
+    <Pane onMouseClicked="#handleMouseClick" prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <ImageView fitHeight="157.47391510009766" fitWidth="399.6732421616172" layoutX="130.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/pokemonLogo.png" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="63.29483096377628" fitWidth="304.0" layoutX="185.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/deco.png" />
+          </image>
+        </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/battle.png" />
+               </image>
+            </ImageView>
+      </children>
+    </Pane>
+  </center>
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.controller.PokemonNameDialogController">
+   <children>
+      <Text layoutX="47.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Give your Pokemon a name :" wrappingWidth="436.81640625">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Text>
+      <TextField fx:id="pokemonNameField" alignment="CENTER" layoutX="165.0" layoutY="282.0" prefHeight="51.0" prefWidth="332.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Button defaultButton="true" layoutX="463.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleCreatePokemon" prefHeight="44.0" prefWidth="152.0" text="Add Pokemon">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <StackPane fx:id="pokemonStackPane" layoutX="220.0" layoutY="32.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="pokemonImage" fitHeight="168.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

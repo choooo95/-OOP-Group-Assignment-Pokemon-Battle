@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.controller.BattleStageMenuController">
+  <children>
+    <ImageView fitHeight="150.0" fitWidth="230.0" layoutX="0.0" layoutY="-2.0">
+      <image>
+        <Image url="@images/menuBorder.png" />
+      </image>
+    </ImageView>
+    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="23.0" maxHeight="35.0" minHeight="35.0" mnemonicParsing="false" onAction="#handleAttack" prefHeight="35.0" prefWidth="198.0" style="-fx-background-color: transparent;&#10;" text="Attack" textAlignment="CENTER">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="57.0" maxHeight="34.0" minHeight="34.0" minWidth="198.0" mnemonicParsing="false" onAction="#handleItem" prefHeight="34.0" prefWidth="198.0" style="-fx-background-color: transparent;&#10;" text="Item" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="91.0" maxHeight="35.0" maxWidth="213.0" minHeight="35.0" minWidth="192.0" mnemonicParsing="false" onAction="#handleRun" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: transparent;&#10;" text="Run" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+  </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+
+.button {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-border-width: 2;
+	-fx-border-style: solid, segments(1, 1);
+	-fx-border-radius: 0, 0;
+	-fx-border-insets: 1 1 1 1;
+}
+
+.button:hover {
+	-fx-background-color: transparent;
+	-fx-border-color: black;
+	-fx-border-width: 2;
+	-fx-border-style: solid, segments(1, 1);
+	-fx-border-radius: 0, 0;
+	-fx-border-insets: 1 1 1 1;
+}
+
+.button:focused {
+	-fx-background-color: transparent;
+	-fx-border-color: black;
+	-fx-border-width: 2;
+	-fx-border-style: solid, segments(1, 1);
+	-fx-border-radius: 0, 0;
+	-fx-border-insets: 1 1 1 1;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}

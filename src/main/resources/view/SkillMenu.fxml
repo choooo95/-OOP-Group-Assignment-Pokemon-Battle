@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.controller.SkillMenuController">
+  <children>
+    <ImageView fitHeight="120.0" fitWidth="260.0" layoutX="0.0" layoutY="0.0">
+      <image>
+        <Image url="@images/menuBorder.png" />
+      </image>
+    </ImageView>
+    <ListView fx:id="skillList" layoutX="19.0" layoutY="21.0" onMouseClicked="#handleSelectSkill" opacity="1.0" prefHeight="80.0" prefWidth="216.0" stylesheets="@Pokemon.css" />
+  </children>
+</AnchorPane>

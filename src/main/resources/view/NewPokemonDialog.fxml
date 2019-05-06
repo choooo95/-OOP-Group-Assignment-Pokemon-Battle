@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.controller.NewPokemonDialogController">
+  <children>
+    <Text layoutX="36.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your partner Pokemon : " wrappingWidth="436.81640625">
+      <font>
+        <Font name="System Bold" size="28.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Button defaultButton="true" layoutX="495.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="44.0" prefWidth="124.0" text="Next">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+    <HBox id="HBox" alignment="CENTER" layoutX="79.0" layoutY="123.0" prefHeight="173.0" prefWidth="502.0" spacing="5.0" stylesheets="@Pokemon.css">
+      <children>
+        <Button contentDisplay="TOP" defaultButton="false" graphicTextGap="7.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" onAction="#bulbasaurChosen" prefHeight="160.0" prefWidth="150.0" text="Bulbasaur">
+          <font>
+            <Font name="System Bold Italic" size="17.0" fx:id="x2" />
+          </font>
+          <graphic>
+            <ImageView fitHeight="115.0" fitWidth="115.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@images/BulbasaurFront.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button contentDisplay="TOP" font="$x2" graphicTextGap="7.0" minHeight="110.0" minWidth="110.0" mnemonicParsing="false" onAction="#squirtleChosen" prefHeight="160.0" prefWidth="150.0" text="Squirtle">
+          <graphic>
+            <ImageView fitHeight="115.0" fitWidth="115.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@images/SquirtleFront.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button contentDisplay="TOP" font="$x2" graphicTextGap="7.0" minHeight="102.0" minWidth="107.0" mnemonicParsing="false" onAction="#charmanderChosen" prefHeight="160.0" prefWidth="150.0" text="Charmander">
+          <graphic>
+            <ImageView fitHeight="115.0" fitWidth="115.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@images/CharmanderFront.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

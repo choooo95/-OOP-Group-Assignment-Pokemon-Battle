@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleMouseClicked" prefHeight="440.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.controller.BattleStageController">
+  <children>
+    <StackPane id="stackPane" fx:id="botStackPane" layoutX="397.0" minHeight="130.0" minWidth="130.0" prefHeight="140.0" prefWidth="140.0">
+      <children>
+        <ImageView fx:id="botPokemonImage" fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="false" StackPane.alignment="CENTER" />
+      </children>
+    </StackPane>
+    <StackPane fx:id="userStackPane" layoutX="88.0" layoutY="130.0" prefHeight="140.0" prefWidth="140.0">
+      <children>
+        <ImageView fx:id="userPokemonImage" fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+    </StackPane>
+    <ImageView fitHeight="84.0" fitWidth="230.0" layoutX="348.0" layoutY="188.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@images/PlayerArrow.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="84.0" fitWidth="230.0" layoutX="70.0" layoutY="45.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@images/EnemyArrow.png" />
+      </image>
+    </ImageView>
+    <Label fx:id="botNameLabel" layoutX="91.0" layoutY="23.0" text="Label">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label id="botHpLabel" fx:id="botCurrentHpLabel" layoutX="143.0" layoutY="59.0" text="Label">
+      <font>
+        <Font size="16.0" fx:id="x4" />
+      </font>
+    </Label>
+    <Label fx:id="userNameLabel" font="$x1" layoutX="384.0" layoutY="164.0" text="Label" />
+    <Label id="userHpLabel" fx:id="userCurrentHpLabel" font="$x4" layoutX="440.0" layoutY="201.0" text="Label" />
+    <Text layoutX="92.0" layoutY="77.0" scaleX="0.99999716028848" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HP :">
+      <font>
+        <Font size="18.0" fx:id="x2" />
+      </font>
+    </Text>
+    <Text font="$x2" layoutX="386.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HP :" />
+    <Text layoutX="194.0" layoutY="76.0" scaleX="0.99999716028848" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+      <font>
+        <Font size="20.0" fx:id="x3" />
+      </font>
+    </Text>
+    <Text font="$x3" layoutX="489.0" layoutY="218.0" scaleX="0.99999716028848" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+    <Label id="botHpLabel" fx:id="botBaseHpLabel" font="$x4" layoutX="213.0" layoutY="59.0" text="Label" />
+    <Label id="botHpLabel" fx:id="userBaseHpLabel" font="$x4" layoutX="508.0" layoutY="200.0" text="Label" />
+    <Label id="userHpLabel" fx:id="userCurrentDefLabel" font="$x4" layoutX="440.0" layoutY="227.0" text="Label" />
+    <Text font="$x2" layoutX="386.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEF :" />
+    <Text font="$x3" layoutX="489.0" layoutY="244.0" scaleX="0.99999716028848" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+    <Label id="botHpLabel" fx:id="userBaseDefLabel" font="$x4" layoutX="508.0" layoutY="226.0" text="Label" />
+    <Label id="botHpLabel" fx:id="botCurrentDefLabel" font="$x4" layoutX="143.0" layoutY="84.0" text="Label" />
+    <Text font="$x2" layoutX="92.0" layoutY="101.0" scaleX="0.99999716028848" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEF :" />
+    <Text font="$x3" layoutX="194.0" layoutY="101.0" scaleX="0.99999716028848" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+    <Label id="botHpLabel" fx:id="botBaseDefLabel" font="$x4" layoutX="213.0" layoutY="84.0" text="Label" />
+  </children>
+</AnchorPane>
